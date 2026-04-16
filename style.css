@@ -43,7 +43,6 @@ html {
   align-items: center;
 }
 
-
 .menu ul {
   list-style: none;
   display: flex;
@@ -73,7 +72,6 @@ html {
   position: relative;
 }
 
-
 .overlay {
   inset: 0;
   position: absolute;
@@ -87,7 +85,6 @@ html {
   z-index: 2;
   max-width: 500px;
 }
-
 
 .subtitle {
   font-size: 0.8rem;
@@ -164,11 +161,10 @@ html {
 
 /* ================= TOURS ================= */
 #tours {
-  padding: 5rem 25%;
+  padding: 5rem 5%;
   background: var(--light);
   text-align: center;
 }
-
 
 .section-title {
   font-size: 2rem;
@@ -176,14 +172,12 @@ html {
   color: var(--dark);
 }
 
-
 .tours-container {
   display: flex;
   gap: 2rem;
   justify-content: center;
   flex-wrap: wrap;
 }
-
 
 .card {
   width: 300px;
@@ -199,7 +193,6 @@ html {
   box-shadow: 0 10px 25px rgba(0,0,0,0.2);
 }
 
-
 .card img {
   width: 100%;
   height: 200px;
@@ -210,7 +203,6 @@ html {
 .card:hover img {
   transform: scale(1.1);
 }
-
 
 .card-content {
   padding: 1rem;
@@ -223,4 +215,48 @@ html {
 .card-content p {
   font-size: 0.9rem;
   margin-bottom: 1rem;
+}
+
+/* ================= GALLERY ================= */
+#gallery {
+  padding-top: 2.5rem;
+  background: var(--primary);
+}
+
+.section-subtitle {
+  text-align: center;
+  font-size: 0.9rem;
+  letter-spacing: 0.1rem;
+  margin-top: 2rem;
+  color: var(--accent);
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  color: var(--light);
+}
+
+.gallery-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: 100%;
+}
+
+.gallery-item {
+  overflow: hidden;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 25rem;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.08);
 }
