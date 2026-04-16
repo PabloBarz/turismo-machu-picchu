@@ -15,7 +15,7 @@
       <nav class="navbar">
         <div class="nav-container">
           <div class="logo">
-            <h1>Explora </h1>
+            <h1>Explora</h1>
           </div>
 
           <div class="menu">
@@ -45,6 +45,44 @@
           <a href="#contact" class="btn">Reservar ahora</a>
         </div>
       </section>
+
+      <!-- ================= ABOUT ================= -->
+      <section id="about">
+        <div class="about-container">
+          <div class="about-text">
+            <h2>Sobre Machu Picchu</h2>
+
+            <p>
+              Machu Picchu es una antigua ciudad inca ubicada en lo alto de los
+              Andes peruanos. Es considerada una de las siete maravillas del
+              mundo moderno.
+            </p>
+
+            <p>
+              Descubre su historia, cultura y paisajes impresionantes en una
+              experiencia única.
+            </p>
+
+            <a href="#tours" class="btn">Ver tours</a>
+          </div>
+
+          <div class="about-img">
+            <img src="./img/machupichuu.jpg" alt="Machu Picchu" />
+          </div>
+        </div>
+      </section>
     </main>
+
+    <script>
+      const navbar = document.querySelector(".navbar");
+
+      window.addEventListener("scroll", () => {
+        if (window.scrollY > 50) {
+          navbar.classList.add("scrolled");
+        } else {
+          navbar.classList.remove("scrolled");
+        }
+      });
+    </script>
   </body>
 </html>

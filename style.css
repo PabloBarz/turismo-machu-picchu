@@ -23,10 +23,15 @@ html {
   left: 0;
   width: 100%;
   padding: 1.2rem 0;
-
   background: transparent;
+  transition: background 0.3s ease;
   color: white;
   z-index: 10;
+}
+
+.navbar.scrolled {
+  background: var(--primary);
+  transition: background 0.3s ease;
 }
 
 .nav-container {
@@ -115,4 +120,44 @@ html {
 
 .btn:hover {
   background: #d97706;
+}
+
+/* ================= ABOUT ================= */
+#about {
+  padding: 5rem 5%;
+  background: #f9fafb;
+}
+
+.about-container {
+  max-width: 1200px;
+  margin: auto;
+
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.about-text {
+  flex: 1;
+}
+
+.about-text h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: var(--dark);
+}
+
+.about-text p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  color: #374151;
+}
+
+.about-img {
+  flex: 1;
+}
+
+.about-img img {
+  width: 100%;
+  border-radius: 10px;
 }
