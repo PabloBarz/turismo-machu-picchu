@@ -43,10 +43,18 @@ html {
   align-items: center;
 }
 
+
 .logo a{
   text-decoration: none;
   color: var(--light);
   font-weight: bold;
+}
+
+.logo img{
+  width: 8.5rem;
+  height: 3.5rem;
+  mix-blend-mode: multiply;
+  border-radius: 0.2rem;
 }
 
 .menu ul {
