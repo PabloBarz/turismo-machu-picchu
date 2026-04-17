@@ -339,3 +339,71 @@ html {
   border: none;
   cursor: pointer;
 }
+
+/* ================= FOOTER ================= */
+#footer {
+  background: #0b0b0b;
+  color: var(--light);
+  padding: 5rem 5%;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: auto;
+
+  display: grid;
+  grid-template-columns: 1.3fr 1fr 1fr 1.2fr;
+  gap: 2rem;
+  align-items: flex-start;
+}
+
+.footer-brand h2 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+.footer-info h4,
+.footer-social h4 {
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  color: var(--light);
+}
+
+.footer-info p {
+  font-size: 0.95rem;
+  margin-bottom: 0.6rem;
+  color: #d1d5db;
+}
+
+.footer-info a,
+.footer-social a {
+  display: inline-block;
+  margin-top: 1rem;
+  text-decoration: none;
+  color: var(--light);
+  font-size: 0.95rem;
+  transition: 0.3s;
+}
+
+.footer-info a:hover,
+.footer-social a:hover {
+  color: var(--accent);
+}
+
+.footer-social h5 {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}
+
+.social-links {
+  display: flex;
+  gap: 1.2rem;
+}
+
+.social-links a {
+  font-weight: 600;
+}
